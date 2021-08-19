@@ -178,6 +178,16 @@ img{
   margin-bottom: var(--mb-3);
 }
 
+.nav__logo{
+  font-size: 2rem; 
+  font-family: 'Style Script', cursive;
+}
+
+.company_logo{
+  width: 40px;
+  border-radius: 50%;
+}
+
 .nav__link, .nav__logo, .nav__toggle{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
@@ -398,11 +408,36 @@ img{
 
 /* Contct us */
 .contact-form{
-  border: 3px solid black;
-  margin:  1rem;
-  display: flex;
-  flex-direction: column
+  margin:  1rem 0;
+  width: 305px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 
+}
+
+.contact-form input{
+  margin: 0.5rem 0;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid;
+  padding: 5px;
+}
+
+.align h2{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2px;
+  font-size: 2rem;
+}
+
+.align a{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .send__title, .send__description{

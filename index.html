@@ -8,9 +8,22 @@
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
         <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/CSS/style.css">
+        <link rel="stylesheet" href="CSS/style.css">
 
         <link rel="icon" href="img/favicon.ico" type="image/icon">
+
+        <!-- fontawesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- bootstrap link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- google fonts link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
 
         <title>EazyWeb</title>
     </head>
@@ -23,15 +36,26 @@
         <!--========== HEADER ==========-->
         <header class="l-header" id="header">
             <nav class="nav bd-container">
-                <a href="#" class="nav__logo" style="font-size: 2rem;">EazyWeb</a>
+                <img src="img/logo.jpg" alt="logo" class="company_logo">
+                <a href="#" class="nav__logo">EazyWeb</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#share" class="nav__link">About Us</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
                         <li class="nav__item"><a href="#decoration" class="nav__link">Pricing</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
                         <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <div class="dropdown" style="margin-left: 32px;">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <ins><strong>Others</strong></ins>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
                        
 
                         <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
@@ -47,15 +71,15 @@
         <main class="l-main">
             <!--========== HOME ==========-->
             <section class="home" id="home">
-                <div class="home__container bd-container bd-grid">
+                <div class="home__container bd-container bd-grid" style="padding-top: 100px;">
                     <div class="home__img">
-                        <img src="assets/img/image1.jpg" alt="">
+                        <img src="img/image1.png" alt="">
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">EazyWeb</h1>
+                        <h1 class="home__title" style="font-family: 'Style Script', cursive; font-size: 3rem;">EazyWeb</h1>
                         <p class="home__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ea animi culpa ab, iusto laudantium accusamus, at dolore velit odio aspernatur tenetur. Unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aut laborum ipsam. </p>
-                        <a href="#" class="button">Get Started</a>
+                        <a href="html/get_started1.html" class="button">Get Started</a>
                     </div>   
                 </div>
             </section>
@@ -64,24 +88,24 @@
             <section class="share section bd-container" id="share">
                 <div class="share__container bd-grid">
                     <div class="share__data">
-                        <h2 class="section-title-center">We Design Websites</h2>
+                        <h2 class="section-title-center" style="font-size: 2rem;">We Design Websites</h2>
                         <p class="share__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus iure quod, velit deleniti esse dolorum labore consectetur minus autem similique voluptas quas, debitis est, facere adipisci cupiditate itaque neque. Labore illo delectus, minus harum at iure voluptatum provident in, quae eveniet autem aperiam eius.</p>
-                        <a href="#" class="button">Request A Quote</a>
+                        <a href="html/get_started2.html" class="button">Request A Quote</a>
                     </div>
 
                     <div class="share__img">
-                        <img src="assets/img/image2.jpg" alt="">
+                        <img src="img/image2.png" alt="">
                     </div>
                 </div>
             </section>
 
             <!--========== DECORATION ==========-->
             <section class="decoration section bd-container" id="decoration">
-                <h2 class="section-title">Our Pricing<br> Web Designing</h2>
+                <h2 class="section-title" style="font-size: 2rem;">Our Pricing<br> Web Designing</h2>
                 <div class="decoration__container bd-grid">
                     <div class="decoration__data">
-                        <img src="assets/img/decoration1.png" alt="" class="decoration__img">
-                        <h3 class="decoration__title">PREMIUM WEB &nbsp; <em><span style="color: #888888; font-size: 1rem; letter-spacing: 1px;">yearly</span></em></h3>
+                        <img src="img/decoration1.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title" style="font-size: 1.5rem; font-weight: 700;">PREMIUM WEB &nbsp; <em><span style="color: #888888; font-size: 1rem; letter-spacing: 1px;">yearly</span></em></h3>
                         <a href="#" class="button button-link"><span style="font-size: 2rem;">199 $</span></a>
                         <br><br>
                         <a href="#" class="button button-link">15 Pages Website</a>
@@ -100,8 +124,8 @@
                     </div>
 
                     <div class="decoration__data">
-                        <img src="assets/img/decoration2.png" alt="" class="decoration__img">
-                        <h3 class="decoration__title">ULTRA WEB&nbsp; <em><span style="color: #888888; font-size: 1rem; letter-spacing: 1px;">yearly</span></em></h3></h3>
+                        <img src="img/decoration2.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title" style="font-size: 1.5rem; font-weight: 700;">ULTRA WEB&nbsp; <em><span style="color: #888888; font-size: 1rem; letter-spacing: 1px;">yearly</span></em></h3></h3>
                         <a href="#" class="button button-link"><span style="font-size: 2rem;">399 $</span></a>
                         <br><br>
                         <a href="#" class="button button-link">25 Pages Website</a>
@@ -121,8 +145,8 @@
                     </div>
 
                     <div class="decoration__data">
-                        <img src="assets/img/decoration3.png" alt="" class="decoration__img">
-                        <h3 class="decoration__title">PREMIUM WEB &nbsp; <em><span style="color: #888888; font-size: 1rem; letter-spacing: 1px;">yearly</span></em></h3></h3>
+                        <img src="img/decoration3.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title" style="font-size: 1.5rem; font-weight: 700;">PREMIUM WEB &nbsp; <em><span style="color: #888888; font-size: 1rem; letter-spacing: 1px;">yearly</span></em></h3></h3>
                         <a href="#" class="button button-link"><span style="font-size: 2rem;">599 $</span></a>
                         <br><br>
                         <a href="#" class="button button-link">50+ Pages Website</a>
@@ -146,30 +170,30 @@
              <!--========== CONTACT US ==========-->
              <section class="share section bd-container" id="contact">
                 <div class="share__container bd-grid">
-                    <div class="share__data">
-                        <h2 class="section-title-center"> &nbsp; Contact Us</h2>
+                    <div class="share__data align">
+                        <h2 class="section-title-center">Contact Us</h2>
                         <form action="#" class="contact-form">
                             <input type="text" placeholder="Enter your name">
                             <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Phone number">
+                            <input type="number" placeholder="Phone number">
                         </form>
 
                         <a href="#" class="button">Get a Callback</a>
                     </div>
 
                     <div class="share__img">
-                        <img src="assets/img/contact.jpg" alt="">
+                        <img src="img/contact.png" alt="" style="width: 600px;">
                     </div>
                 </div>
             </section>
 
             <!--========== ACCESSORIES ==========-->
             <section class="accessory section bd-container" id="services">
-                <h2 class="section-title">Services We Provide<br></h2>
+                <h2 class="section-title" style="font-size: 2rem;">Services We Provide<br></h2>
 
                 <div class="accessory__container bd-grid">
                     <div class="accessory__content">
-                        <img src="assets/img/design.jpg" alt="" class="accessory__img">
+                        <img src="img/design.jpg" alt="" class="accessory__img">
                         <h3 class="accessory__title">Design</h3>
                         <span class="accessory__category">Accessory</span>
                         <span class="accessory__preci">$10</span>
@@ -177,7 +201,7 @@
                     </div>
 
                     <div class="accessory__content">
-                        <img src="assets/img/hosting.jpg" alt="" class="accessory__img" style="background-size: cover;">
+                        <img src="img/hosting.jpg" alt="" class="accessory__img" style="background-size: cover;">
                         <h3 class="accessory__title">Web Hosting</h3>
                         <span class="accessory__category">Accessory</span>
                         <span class="accessory__preci">$20</span>
@@ -185,7 +209,7 @@
                     </div>
 
                     <div class="accessory__content">
-                        <img src="assets/img/content.jpg" alt="" class="accessory__img">
+                        <img src="img/content.jpg" alt="" class="accessory__img">
                         <h3 class="accessory__title">Content Writing</h3>
                         <span class="accessory__category">Accessory</span>
                         <span class="accessory__preci">$10.00</span>
@@ -193,7 +217,7 @@
                     </div>
 
                     <div class="accessory__content">
-                        <img src="assets/img/app.jpg" alt="" class="accessory__img">
+                        <img src="img/app.jpg" alt="" class="accessory__img">
                         <h3 class="accessory__title">App Developement</h3>
                         <span class="accessory__category">Accessory</span>
                         <span class="accessory__preci">$600</span>
@@ -201,7 +225,7 @@
                     </div>
 
                     <div class="accessory__content">
-                        <img src="assets/img/art.jpg" alt="" class="accessory__img">
+                        <img src="img/art.jpg" alt="" class="accessory__img">
                         <h3 class="accessory__title">Art Work</h3>
                         <span class="accessory__category">Accessory</span>
                         <span class="accessory__preci">Price Varies</span>
@@ -209,7 +233,7 @@
                     </div>
 
                     <div class="accessory__content">
-                        <img src="assets/img/seo.jpg" alt="" class="accessory__img">
+                        <img src="img/seo.jpg" alt="" class="accessory__img">
                         <h3 class="accessory__title">SEO</h3>
                         <span class="accessory__category">Accessory</span>
                         <span class="accessory__preci">$2</span>
@@ -222,7 +246,7 @@
             <section class="send section">
                 <div class="send__container bd-container bd-grid">
                     <div class="send__content">
-                        <h2 class="section-title-center send__title">Lorem, ipsum.</h2>
+                        <h2 class="section-title-center send__title" style="font-size: 2rem;">Brands we have Worked with</h2>
                         <p class="send__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit?</p>
                         <form action="">
                             <div class="send__direction">
@@ -233,7 +257,7 @@
                     </div>
 
                     <div class="send__img">
-                        <img src="assets/img/send.png" alt="">
+                        <img src="img/send.png" alt="">
                     </div>
                 </div>
             </section>
@@ -252,18 +276,18 @@
                 <div class="footer__content">
                     <h3 class="footer__title">Our Services</h3>
                     <ul>
-                        <li><a href="#" class="footer__link">Pricing </a></li>
-                        <li><a href="#" class="footer__link">Discounts</a></li>
-                        <li><a href="#" class="footer__link">Join With Us</a></li>
+                        <li><a href="html/pricing.html" class="footer__link">Pricing</a></li>
+                        <li><a href="html/discounts.html" class="footer__link">Discounts</a></li>
+                        <li><a href="html/join.html" class="footer__link">Join With Us</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__content">
                     <h3 class="footer__title">Our Company</h3>
                     <ul>
-                        <li><a href="#" class="footer__link">Blog</a></li>
-                        <li><a href="#" class="footer__link">About Us</a></li>
-                        <li><a href="#" class="footer__link">Our Mision</a></li>
+                        <li><a href="html/blog.html" class="footer__link">Blog</a></li>
+                        <li><a href="html/about.html" class="footer__link">About Us</a></li>
+                        <li><a href="html/mission.html" class="footer__link">Our Mision</a></li>
                     </ul>
                 </div>
 
@@ -282,6 +306,6 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
